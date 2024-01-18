@@ -28,7 +28,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
-            df=pd.read_csv('DATA/data/stud.csv')
+            df=pd.read_csv('DATA/data/insurance_dataset (1).csv')
             logging.info('Read the dataset as dataframe')
             
 
@@ -60,8 +60,8 @@ if __name__=="__main__":
     data_transformation=DataTransformation()
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
     
-    modeltrainer=ModelTrainer()
-    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
+    #modeltrainer=ModelTrainer()
+    #print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
    
 
     
